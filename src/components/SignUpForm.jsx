@@ -12,7 +12,7 @@ export default function SignUpForm () { //create SignUpForm component
     return (
     <>
         <h2>Sign Up!</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
             <label>
                 Username: <input value={username} onChange={(e) => {setUsername(e.target.value);}} />
             </label>
