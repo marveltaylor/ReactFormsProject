@@ -1,5 +1,5 @@
-export default function Authenticate () { //create Authenticate component
+export default function Authenticate () { //create Authenticate component 
     return (
-        <h2>Authenticate!</h2>
+        <h2>Authenticate!</h2> 
     )
-};
+}
