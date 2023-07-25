@@ -16,6 +16,7 @@ const [error, setError] = useState(null); //create error state variable with val
     return (
     <>
         <h2>Sign Up!</h2>
+        {error && <p>{error}</p>}
         <form onSubmit={handleSubmit}>
             <label>
                 Username: <input value={username} onChange={(e) => {setUsername(e.target.value);}} />
