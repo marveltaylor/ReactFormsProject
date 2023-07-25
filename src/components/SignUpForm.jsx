@@ -8,7 +8,6 @@ const [error, setError] = useState(null); //create error state variable with val
 
     async function handleSubmit(event) { //prevents reloading the page
         event.preventDefault();
-        console.log("Hello");
         try {
         } catch (error) {
             setError(error.message);
