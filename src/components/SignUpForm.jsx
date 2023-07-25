@@ -6,6 +6,17 @@ const [error, setError] = useState(null); //create error state variable with val
 
 export default function SignUpForm () { //create SignUpForm component
     return (
+    <>
         <h2>Sign Up!</h2>
+        <form>
+            <label>
+                Username: <input />
+            </label>
+            <label>
+                Password: <input />
+            </label>
+            <button>Submit</button>
+        </form>
+    </>
     )
 };
