@@ -9,6 +9,7 @@ const [error, setError] = useState(null); //create error state variable with val
     async function handleSubmit(event) { //prevents reloading the page
         event.preventDefault();
         try {
+            const response = await fetch("https://fsa-jwt-practice.herokuapp.com/signup");
         } catch (error) {
             setError(error.message);
         }
