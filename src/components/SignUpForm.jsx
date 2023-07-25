@@ -1,10 +1,11 @@
 import { useState } from "react";
 
+export default function SignUpForm () { //create SignUpForm component
+
 const [username, setUsername] = useState(""); //create username state variable with value ""
 const [password, setPassword] = useState(""); //create password state variable with value ""
 const [error, setError] = useState(null); //create error state variable with value null
 
-export default function SignUpForm () { //create SignUpForm component
     async function handleSubmit(event) { //prevents reloading the page
         event.preventDefault();
         console.log("Hello");
