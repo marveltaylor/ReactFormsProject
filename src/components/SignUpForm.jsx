@@ -5,6 +5,10 @@ const [password, setPassword] = useState(""); //create password state variable w
 const [error, setError] = useState(null); //create error state variable with value null
 
 export default function SignUpForm () { //create SignUpForm component
+    async function handleSubmit(event) { //prevents reloading the page
+        event.preventDefault();
+        console.log("Hello");
+    }
     return (
     <>
         <h2>Sign Up!</h2>
