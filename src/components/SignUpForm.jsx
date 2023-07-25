@@ -17,6 +17,7 @@ const [error, setError] = useState(null); //create error state variable with val
             console.log(result);
         } catch (error) {
             setError(error.message);
+            setToken(result.token);
         }
     }
     return (
