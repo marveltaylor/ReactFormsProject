@@ -13,6 +13,7 @@ export default function Authenticate (token) { //create Authenticate component
     return (
     <>
         <h2>Authenticate!</h2> 
+        {error && <p>{error}</p>}
         <button onClick={handleClick}>Authenticate Token!</button>
     </>
 
