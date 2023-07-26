@@ -13,6 +13,7 @@ export default function Authenticate (token) { //create Authenticate component
         }
         });
         const result = await response.json();
+        setSuccessMessage(result.message);
         } catch (error) {
             setError(error.message);
         }
