@@ -5,6 +5,12 @@ export default function Authenticate (token) { //create Authenticate component
 
     async function handleClick() {
         try {
+            const repsonse = await fetch("https://fsa-jwt-practice.herokuapp.com/authenticate", {
+                method: "GET",
+                headers: {"Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+        }
+        })
         } catch (error) {
             setError(error.message);
         }
