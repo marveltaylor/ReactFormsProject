@@ -1,6 +1,6 @@
 export default function Authenticate (token) { //create Authenticate component 
     async function handleClick() {
-
+        
     }
     
     return (
