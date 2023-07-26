@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function Authenticate (token) { //create Authenticate component 
     async function handleClick() {
         try {
