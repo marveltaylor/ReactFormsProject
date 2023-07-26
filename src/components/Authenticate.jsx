@@ -10,7 +10,8 @@ export default function Authenticate (token) { //create Authenticate component
                 headers: {"Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
         }
-        })
+        });
+        const result = await response.json();
         } catch (error) {
             setError(error.message);
         }
