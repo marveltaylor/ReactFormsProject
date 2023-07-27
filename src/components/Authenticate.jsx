@@ -10,8 +10,9 @@ export default function Authenticate ({token}) { //create Authenticate component
                 method: "GET",
                 headers: {"Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
+            }
         }
-        });
+        );
         const result = await response.json();
         setSuccessMessage(result.message);
         } catch (error) {
@@ -19,13 +20,12 @@ export default function Authenticate ({token}) { //create Authenticate component
         }
     }
 
-    return (
+    return ( //should button be onClick={() => setSuccessMessage{}...}
     <>
         <h2>Authenticate!</h2> 
         {successMessage && <p>{successMessage}</p>}
         {error && <p>{error}</p>}
         <button onClick={handleClick}>Authenticate Token!</button>
     </>
-
-    )
+    );
 }
