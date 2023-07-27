@@ -33,7 +33,7 @@ const [error, setError] = useState(null); //create error state variable with val
             <label>
                 Password: <input type="password" name="password" id="password" required minLength="4" maxLength="6" value={password} onChange={(e) => {setPassword(e.target.value);}}/>
             </label>
-            <button>Submit</button>
+            <button className="submit">Submit</button>
         </form>
     </>
     )
