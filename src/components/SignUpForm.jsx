@@ -15,10 +15,12 @@ const [error, setError] = useState(null); //create error state variable with val
             });
             const result = await response.json();
             console.log(result);
+            setToken(result.token);
         } catch (error) {
             setError(error.message);
-            setToken(result.token);
         }
+        setUsername("");
+        setPassword("");
     }
     return (
     <>
