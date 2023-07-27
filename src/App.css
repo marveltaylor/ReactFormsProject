@@ -11,6 +11,10 @@
 color: rgb(132, 187, 231);
 }
 
+:hover .authenticate {
+  color: rgb(132, 187, 231);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
