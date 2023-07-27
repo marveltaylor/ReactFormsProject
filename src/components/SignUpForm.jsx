@@ -28,7 +28,7 @@ const [error, setError] = useState(null); //create error state variable with val
         {error && <p>{error}</p>} 
         <form onSubmit={handleSubmit}>
             <label>
-                Username: <input value={username} onChange={(e) => {setUsername(e.target.value);}} />
+                Username: <input type="username" name="username" id="username" required minLength="5" maxLength="8" value={username} onChange={(e) => {setUsername(e.target.value);}} />
             </label>
             <label>
                 Password: <input type="password" name="password" id="password" required minLength="4" maxLength="6" value={password} onChange={(e) => {setPassword(e.target.value);}}/>
